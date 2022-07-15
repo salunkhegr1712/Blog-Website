@@ -1,0 +1,13 @@
+<!-- now we will add header and footer file -->
+
+<!-- partials is folder in view and we fetch it in this case -->
+<%-include("partials/header");-%>
+<h1>Home</h1>
+
+<!-- here ejs will get value from server throught object -->
+<p><%=content%> </p>
+
+<!-- it is a ejs layout footer file -->
+<!-- partials is folder in view and we fetch it in this case -->
+<%- include("partials/footer");-%>
+<%# you can pass footer only or footer.ejs also %>

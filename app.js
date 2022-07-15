@@ -10,6 +10,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
+// app.set("views",path.join(__dirname+"views/"),path.join(__dirname,"views/partials/"));
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -18,4 +19,16 @@ app.use(express.static("public"));
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
+});
+
+app.get("/",function(request,responce){
+  responce.render("home",{content:homeStartingContent});
+});
+
+app.get("/about",function(request,responce){
+  responce.render("about",{content:aboutContent});
+});
+
+app.get("/contact",function(request,responce){
+  responce.render("about",{content:contactContent});
 });
