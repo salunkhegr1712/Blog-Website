@@ -7,6 +7,11 @@
 <!-- here ejs will get value from server throught object -->
 <p><%=content%> </p>
 
+<% for(let i=0;i<array.length;i++){%>
+  <h1><%=array[i].title%></h1>
+  <p><%=array[i].content%></p>
+<%} %>
+
 <!-- it is a ejs layout footer file -->
 <!-- partials is folder in view and we fetch it in this case -->
 <%- include("partials/footer");-%>

@@ -1,6 +1,8 @@
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+    letter-spacing: 2px;
+
 }
 .navbar {
     padding-top: 15px;
@@ -10,6 +12,7 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
@@ -29,7 +32,15 @@
 }
 
 .footer p {
-	margin-top: 15px;
+	margin-top: 20px;
 	font-size: 18px;
   color: #fff;
+}
+.btn {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: .75% 2%;
+  background-color: #1abc9c;
 }
