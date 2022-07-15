@@ -29,6 +29,7 @@
 	width: 100%;
 	height: 60px;
 	background-color: #1abc9c;
+  position: fixed;
 }
 
 .footer p {

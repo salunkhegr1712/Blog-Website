@@ -9,7 +9,7 @@
 
 <% for(let i=0;i<array.length;i++){%>
   <h1><%=array[i].title%></h1>
-  <p><%=array[i].content%></p>
+  <p><%=(array[i].content).slice(0,160)%> <a href="/posts/<%=array[i].title%>">... Read More</a></p>
 <%} %>
 
 <!-- it is a ejs layout footer file -->
